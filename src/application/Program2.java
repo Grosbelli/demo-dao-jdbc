@@ -21,5 +21,10 @@ public class Program2 {
             System.out.println(x);
         });
 
+        System.out.println("=== TEST 3: department insert =====");
+        department.setName("Musical");
+        departmentDao.insert(department);
+        System.out.println("Department included! Id = " + department.getId());
+
     }
 }
